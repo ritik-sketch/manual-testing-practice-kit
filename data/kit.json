@@ -6571,6 +6571,284 @@
     }
    ],
    "group": "academy"
+  },
+  {
+   "id": "ua-cert",
+   "name": "Certification Practice Cycles",
+   "intro": "Academy Certification Program ke chaar practice cycles - Computer, Mobile, Charles Proxy aur Academy Challenge - unki requirements, rules, passing aur quiz map ek jagah.",
+   "qs": [
+    {
+     "q": "What are the four certification practice cycles covered here, and what does each one require you to have passed first?",
+     "s": "Academy Certification Program ke course pages me ye four practice cycles isi order me hain: 1) Computer Testing, 2) Mobile Device Testing, 3) Charles Proxy Testing, 4) Academy Challenge. Computer Testing ke liye Introduction to Testing cycle pass hona chahiye. Mobile Device Testing ke liye Computer Testing cycle pass hona chahiye (page pe likha hai: practice cycle locked until preceding cycles are passed). Academy Challenge ke liye Charles Proxy cycle pass hona chahiye. Charles Proxy page pe sirf FAQs aur quiz map diya hai, uski requirements notes me nahi likhi, aur wo cycle bhi locked dikh raha tha. Har cycle se pehle ek quiz hai: Computer 15, Mobile 20, Charles 25, Academy Challenge 30 questions sahi karne hote hain.",
+     "b": "The certification track has four practice cycles in sequence: Computer Testing, Mobile Device Testing, Charles Proxy Testing and the Academy Challenge. Computer Testing needs the Introduction to Testing cycle passed, Mobile Device Testing needs Computer Testing passed, and the Academy Challenge needs the Charles Proxy cycle passed. Each cycle has a quiz before sign-up, needing 15, 20, 25 and 30 correct answers respectively.",
+     "t": "Computer -> Mobile -> Charles -> Challenge; quiz 15-20-25-30, har step pe +5."
+    },
+    {
+     "q": "What are the steps to follow after reading a certification cycle page, and how are grades assigned?",
+     "s": "What to do next (Computer aur Mobile same; Academy Challenge me bhi same pattern): 1) FAQ padho aur previous courses review karo. 2) Quiz complete karo (Reference Links use karo). 3) Quiz ke baad blue Sign Up button se sign up karo. 4) Overview padho, invitation accept karo, cycle instructions follow karo. 5) Pass hone ke baad next cycle pe jao. 6) Grades: active ya locked cycle ke dauran Pass grade sirf tab milta hai jab approved issue AUR approved test case dono ho; ye dono approvals ke 12 se 24 hours ke andar assign hota hai. Pass hone ke baad tester next practice cycle ke liye sign up kar sakta hai, cycle close hone ka wait nahi karna. Cycle close hone pe baaki sab ko Pass/Fail grade milta hai: Pass = aage badho, Fail = same level ke liye dobara sign up karo.",
+     "b": "Read the FAQ and earlier courses, pass the quiz using the Reference Links, sign up with the blue Sign Up button, then read the overview, accept the invitation and follow the instructions. During an active or locked cycle a Pass is given only once both an issue and a test case are approved, within 12 to 24 hours of both approvals, and you can sign up for the next cycle right away. When the cycle closes everyone else gets Pass or Fail, and a Fail means signing up again for the same level.",
+     "t": "FAQ -> Quiz -> Sign Up -> Accept -> Pass; Pass 12-24 ghante me, Fail = same level repeat."
+    },
+    {
+     "q": "How do the cycles differ in issue limits and duplicate handling?",
+     "s": "Computer Testing aur Mobile Device Testing: maximum three issue reports, aur dusre testers ke issues hidden hote hain, isliye duplicates ki tension nahi. Invalid reports reject hote hain. Academy Challenge: any number of issue reports allowed, lekin duplicates (invalid) reject hote hain, isliye dusre testers ke issues check karne padte hain, known issues list check karni padti hai, aur already reported issue pe +1 ya reproduce karna hota hai. Saath me bug limit: rated ya unrated testers ke paas ek time pe max 5 new issues ho sakte hain. Computer FAQ: 2 approved + 1 rejected ho to ek aur issue report kar sakte ho, kul 3 approved issues ho sakte hain.",
+     "b": "In Computer and Mobile Device Testing you may submit at most three issue reports, and other testers' issues are hidden, so duplicates are not a concern. In the Academy Challenge there is no limit on the number of reports, but duplicates are rejected, so you must check other testers' issues and the known issues list and +1 existing ones. There is also a cap of 5 new, unreviewed issues at a time in the Challenge.",
+     "t": "Computer/Mobile = 3 max, duplicates hidden; Challenge = unlimited but 5 new at a time, duplicates check karo."
+    },
+    {
+     "q": "What do you need before joining the Computer Testing cycle, and what new skills does it make you practise?",
+     "s": "Requirements: 1) Introduction to Testing cycle pass kiya ho. 2) Computer ho. 3) Computer pe screen recording banana aata ho. 4) Browser console logs collect karna aata ho. New things you will practise: 1) Live cycles me computer se testing. 2) Computer pe screen recordings banana. 3) Desktop browser logs collect karna. 4) Review likhna.",
+     "b": "To join Computer Testing you must have passed the Introduction to Testing cycle, have a computer, and know how to make screen recordings and collect browser console logs on it. The cycle lets you practise testing in live cycles on a computer, making screen recordings, collecting desktop browser logs and writing a review.",
+     "t": "Intro pass + computer + recording + console log; practise = live test, recording, desktop log, review."
+    },
+    {
+     "q": "What are the rules specific to the Computer Testing cycle and what do you need to pass it?",
+     "s": "Cycle specific info: 1) Testing sirf computers pe (Windows, macOS ya Linux). 2) Invalid issue reports reject honge. 3) Maximum three issue reports. 4) Dusre testers ke reported issues hidden hain, isliye duplicates ki fikar nahi. Passing ke liye: kam se kam ek approved issue report aur ek approved test case.",
+     "b": "Computer Testing is done only on Windows, macOS or Linux computers, invalid reports are rejected, and you can submit at most three issue reports. Other testers' issues are hidden, so duplicates are not a concern. To pass you need at least one approved issue report and one approved test case.",
+     "t": "Win/Mac/Linux, 3 max, duplicate hidden; pass = 1 issue + 1 test case."
+    },
+    {
+     "q": "Which course areas does the Computer Testing quiz draw from?",
+     "s": "Sign up se pehle 15 questions sahi karne hain. Course area wise summary: Screen recording (5 questions) - Basics of Screen Recording 3 baar, Handbrake 1, Screen Recording on Windows 1. Issues and rejections (4) - What is an Issue 1, Bug Rejections 3. Testing process and test cases (4) - Best Practices (Testing) 1, Test Cycle Process 1, Test Case 1, Best Practices (Test Cases) 1. Logs (1) - Browser Console Logs (Desktop). Cycle course (1) - Computer Testing. Sabse zyada weight screen recording aur Bug Rejections ka hai.",
+     "b": "The Computer Testing quiz needs 15 correct answers. Most questions come from screen recording (Basics of Screen Recording, Handbrake, Screen Recording on Windows) and from issues and Bug Rejections, followed by test-cycle process and test-case best practices, desktop browser console logs and the Computer Testing course itself.",
+     "t": "Computer quiz = Recording + Rejections heavy; 15 pass."
+    },
+    {
+     "q": "In the Computer Testing cycle, do I need to write a test case after claiming a slot?",
+     "s": "Nahi. Testers test cases nahi likhte. Slot claim karne (invitation accept karne) ke baad apna test case open karo aur use execute karo. Execute karna seekhne ke liye course: What is a test case.",
+     "b": "No, testers do not write test cases. After claiming a slot you open your assigned test case and execute it.",
+     "t": "Test case likhna nahi, chalana hai."
+    },
+    {
+     "q": "What is the difference between a bug report and a test case?",
+     "s": "Bug report kisi bug ya issue ka written summary hai. Test case kisi product ko test karne ke required steps ki series hai. Cycle pass karne ke liye dono chahiye: approved bug report aur approved test case. Courses: Bug Reports, Slots and Test Cases.",
+     "b": "A bug report is a written summary of a bug or issue, while a test case is a series of required steps to test a product. Passing a practice cycle needs one of each approved.",
+     "t": "Bug report = kya toota; test case = kaise test karna."
+    },
+    {
+     "q": "Do I have to upload attachments to test case steps that show Result Attachments and Pass/Fail/Done options?",
+     "s": "Agar Result Attachments section ke neeche koi minimum number nahi dikhta, to attachment upload karna zaroori nahi. Agar minimum number dikhe (jaise MINIMUM 1), to attachment upload karna hai. Course: Attachments in a Test Case.",
+     "b": "Only if a minimum is shown. If the Result Attachments section shows a minimum such as MINIMUM 1 you must upload that many attachments; if no minimum is shown, no attachment is required.",
+     "t": "MINIMUM likha hai to upload, warna nahi."
+    },
+    {
+     "q": "How do you add or replace attachments on an issue report you already submitted?",
+     "s": "Steps: 1) Apna bug report open karo. 2) Attachments section tak scroll karo (naye attachments ke liye Edit Issue click karne ki zaroorat nahi). 3) Choose Files button se upload karo ya drag and drop karo. 4) Upload Complete message aane tak wait karo. 5) Purana galat attachment delete karo.",
+     "b": "Open the bug report and scroll to the attachments section; you do not need Edit Issue for this. Upload with Choose Files or drag and drop, wait for the Upload Complete message, then delete the old incorrect attachment.",
+     "t": "Open -> scroll -> upload -> Upload Complete -> purana delete; Edit Issue nahi."
+    },
+    {
+     "q": "You enabled timestamps and Preserve Log, but the TTL says the 'Navigated' string is missing from your console log. What went wrong?",
+     "s": "Sabse likely: console open karne ke baad testing website ka homepage refresh karna bhool gaye. Dobara karo aur homepage refresh karo. Saath me, agar issue reproduce karte waqt naye tab pe redirect hote ho, to browser console settings me Auto-open DevTools for popups enable karo (Chrome aur new MS Edge ke liye). Phir dono console logs combine karke issue report me upload karo.",
+     "b": "You most likely did not refresh the testing website's homepage after opening the console, so retry and refresh. If reproducing the issue opens a new tab, also enable Auto-open DevTools for popups in the console settings (Chrome and new Edge), then combine both console logs and upload them.",
+     "t": "Console kholo, phir refresh - tabhi 'Navigated' aayega; popup ho to Auto-open DevTools."
+    },
+    {
+     "q": "What are field validation issues and usability issues, which are out of scope in the Computer Testing cycle?",
+     "s": "Field validation issue: jab aap fields me aisi values daalte ho jo rules ke hisaab se invalid hain aur field unhe accept kar leta hai. Example: registration me name ya surname field numeric values accept kare. Usability issue: system ka koi aspect ya user pe koi demand jo typical usage me user ke goals achieve karna unpleasant ya inefficient bana de. Ye basically site ko improve karne ya use easier banane ke suggestions hote hain.",
+     "b": "A field validation issue is when a field accepts input that its rules should reject, for example a name or surname field accepting numbers at registration. A usability issue is something that makes reaching the user's goals unpleasant or inefficient in typical use; these are essentially suggestions to improve the site or make it easier to use.",
+     "t": "Validation = galat input accept; usability = suggestion."
+    },
+    {
+     "q": "Can you test the mobile version of the testing website on a computer during the Computer Testing cycle?",
+     "s": "Nahi, mobile version test nahi kar sakte. Issues desktop view aur full screen me report karo.",
+     "b": "No. In the Computer Testing cycle you report issues in the desktop view on full screen, not the mobile version.",
+     "t": "Computer cycle = desktop view, full screen."
+    },
+    {
+     "q": "Your issue was approved but you forgot to submit the test case. Did you pass, and what should you do?",
+     "s": "Nahi, approved test case nahi hai to cycle pass nahi hua. Cycle lock hone ke baad test case submit nahi kar sakte, jab tak test case pe more info request na hua ho. Isliye same cycle ke liye dobara sign up karo. Next time instructions, chat room aur announcements dhyan se follow karo; cycle chat me apna experience share karna dusre testers ki bhi help karta hai.",
+     "b": "No, without an approved test case you have not passed. A test case cannot be submitted after the cycle is locked unless it was requested for more info, so you sign up for the same cycle again and follow the instructions, chat and announcements closely next time.",
+     "t": "Issue + test case dono; lock ke baad test case nahi (sirf more info pe)."
+    },
+    {
+     "q": "You have two approved issues and one rejected issue in the Computer Testing cycle. Can you submit another?",
+     "s": "Haan, ek aur issue report kar sakte ho. Kul 3 approved issues ho sakte hain.",
+     "b": "Yes, you can report one more issue, because you can have up to three approved issues in total.",
+     "t": "Rejected count nahi hota; 3 approved tak."
+    },
+    {
+     "q": "Do you need to list the login or registration steps in the Action Performed field every time?",
+     "s": "Nahi, poora sign-in process likhne ki zaroorat nahi. Actions performed me precondition daal do ki user already logged in hai. Example: Precondition: User should be logged in and there should be some products in the cart. 1) Go to https://www.academybugs.com 2) Click on Cart icon.",
+     "b": "No. You can add a precondition in Actions Performed stating the user is already logged in, for example 'User should be logged in and there should be some products in the cart', and then list only the remaining steps.",
+     "t": "Login steps ki jagah ek Precondition line."
+    },
+    {
+     "q": "You claimed a slot with the wrong device. What should you do?",
+     "s": "Agar cycle abhi active hai: test case open karo aur Unclaim button click karke galat test case unclaim karo, phir sahi device ke saath naya slot claim karo. Agar cycle locked hai: device change nahi kar sakte; TTL ke request ka wait karo.",
+     "b": "If the cycle is still active, open the test case, click Unclaim and claim a new slot with the correct device. If the cycle is locked you cannot change the device and should wait for the TTL's request.",
+     "t": "Active = Unclaim + reclaim; locked = TTL ka wait."
+    },
+    {
+     "q": "What do you need before joining the Mobile Device Testing cycle, and what new skills does it make you practise?",
+     "s": "Requirements: 1) Computer Testing cycle pass kiya ho. 2) Mobile device ho. 3) Mobile pe screen recordings bana sako. 4) Mobile device logs aur mobile browser console logs collect kar sako (mobile device logs collect karne ke liye computer chahiye). New things: 1) Live cycles me mobile devices se testing. 2) Mobile pe screen recordings. 3) Mobile device console logs aur mobile browser console logs collect karna.",
+     "b": "You must have passed Computer Testing, own a mobile device, and be able to record the screen and collect both mobile device logs and mobile browser console logs; a computer is needed for the device logs. The cycle lets you practise live testing on mobile, mobile screen recordings and collecting both kinds of mobile logs.",
+     "t": "Computer pass + phone + recording + device log + browser log (device log ke liye computer)."
+    },
+    {
+     "q": "What are the rules and passing criteria of the Mobile Device Testing cycle?",
+     "s": "Cycle info: 1) Testing sirf mobile device pe (Android ya iOS). 2) Invalid reports reject. 3) Maximum three issues. 4) Dusre testers ke issues hidden. Passing: kam se kam ek approved issue report aur ek approved test case. What to do next aur grading rules Computer Testing jaise hi hain (12 se 24 hours me Pass, close pe Pass/Fail).",
+     "b": "Mobile Device Testing is done only on Android or iOS devices, invalid reports are rejected, the limit is three issues and other testers' issues are hidden. To pass you need at least one approved issue report and one approved test case, with the same next steps and grading rules as Computer Testing.",
+     "t": "Android/iOS only, 3 max, pass = 1 + 1."
+    },
+    {
+     "q": "Which course areas does the Mobile Device Testing quiz draw from?",
+     "s": "Sign up se pehle 20 questions sahi karne hain. Area wise: Issues and reporting (6) - What is an Issue, What is a Valid Issue (Bug), Bug Rejections, Severity vs Value, How to write an Issue Report 2 baar. Testing and cycles (6) - Testing Types, Mobile App, Best Practices (Testing), Test Cycle Terms, Test Cycle Process, Test Case. Tester basics and policies (5) - Tester Selection, Tester Payments, Tester Ratings, GDPR, Terms of Use. Logs (3) - Android Device Logs, Browser Logs (Mobile), Browser Logs (Desktop).",
+     "b": "The Mobile Device Testing quiz needs 20 correct answers. It covers issues and reporting (valid issues, rejections, severity vs value, writing reports), testing and cycle topics (testing types, mobile app, test cycle terms and process, test cases), tester basics and policies (selection, payments, ratings, GDPR, Terms of Use) and logs (Android device logs plus mobile and desktop browser logs).",
+     "t": "Mobile quiz 20 = Issues 6 + Cycles 6 + Tester/policy 5 + Logs 3."
+    },
+    {
+     "q": "The app under test is not available in your country. What should you do?",
+     "s": "Agar overview me website ka mention hai to website test karo. Warna sirf app hi in scope hai: chat me likho ki app available nahi hai, aur aapko kisi dusre cycle me invite kiya ja sakta hai.",
+     "b": "If the overview mentions the website, test the website. Otherwise only the app is in scope, so post in the chat that the app is not available; you may be invited to another cycle.",
+     "t": "Website in scope? test karo; warna chat me batao."
+    },
+    {
+     "q": "You completed your test case but it has not been reviewed yet. Why?",
+     "s": "Test cases cycle lock hone ke baad check aur approve kiye jaate hain.",
+     "b": "Test cases are checked and approved after the cycle is locked, so a pending review before that is normal.",
+     "t": "Test case review = lock ke baad."
+    },
+    {
+     "q": "Which courses should you review if you have trouble collecting Android or iOS device logs?",
+     "s": "Android logs ADB se collect karne me problem ho to Android Device Logs course review karo. iOS logs ke liye iOS Device Logs course review karo.",
+     "b": "For Android log problems with ADB, review the Android Device Logs course; for iOS logs, review the iOS Device Logs course.",
+     "t": "Android = Android Device Logs; iOS = iOS Device Logs."
+    },
+    {
+     "q": "Your video is too large to upload, or you need help with screenshots and markup. What do the FAQs say?",
+     "s": "Video bahut bada ho to compress karo, jaise HandBrake se. Screenshot aur markup ke liye Basics of Screenshots course review karo.",
+     "b": "Compress a large video, for example with HandBrake, and review the Basics of Screenshots course for screenshot and markup questions.",
+     "t": "Bada video = HandBrake; screenshot = Basics of Screenshots."
+    },
+    {
+     "q": "Can you use a VPN while testing in the Mobile Device Testing cycle?",
+     "s": "Nahi, VPN allowed nahi hai. Ye Terms of Use ke against hai.",
+     "b": "No. Using a VPN while testing is not allowed because it is against the Terms of Use.",
+     "t": "VPN = Terms of Use violation."
+    },
+    {
+     "q": "ADB shows 'waiting for device'. How do you fix it?",
+     "s": "Computer pe USB drivers aur device ka driver install karo. Phir bhi fail ho to dusra USB cable try karo.",
+     "b": "Install the USB drivers and the device driver on the computer, and if it still fails, try another USB cable.",
+     "t": "Waiting for device = driver, phir cable."
+    },
+    {
+     "q": "Your Android log file is too large. What should you do?",
+     "s": "Dusre apps/pages close karo, aur app open karne se pehle adb logcat -c se log clear karo, phir issue reproduce karo.",
+     "b": "Close other apps and pages, clear the log with adb logcat -c before opening the app, then reproduce the issue so the log stays small.",
+     "t": "logcat -c = clear, phir reproduce."
+    },
+    {
+     "q": "What does the Charles Proxy Testing course page show, and how many quiz answers do you need?",
+     "s": "Notes me Charles Proxy Testing page pe Quiz Completed dikh raha tha aur practice cycle locked tha. Page pe FAQs (6) aur Reference Links quiz map diya hai. Sign up se pehle 25 questions sahi karne hain. Is cycle ki requirements, practise items aur passing criteria notes me nahi likhe. Academy Challenge ke liye Charles Proxy cycle pass hona zaroori hai.",
+     "b": "The Charles Proxy Testing page in the notes shows the quiz as completed and the practice cycle as locked, with six FAQs and a quiz reference map. You must answer 25 quiz questions correctly before signing up, and passing this cycle is the requirement for the Academy Challenge.",
+     "t": "Charles = 25 sahi, aur Challenge ka darwaza."
+    },
+    {
+     "q": "Which course areas does the Charles Proxy Testing quiz draw from?",
+     "s": "25 questions. Area wise: Cycle, communication and platform rules (10) - Test Cycle Information, Communication 2 baar, Tester Selection 2 baar, Terms of Use, What is a slot, Tester Ratings, Tester Payments, Practice Test Cycles. Web debugging proxy and Charles (8) - What is a Web Debugging Proxy 3 baar, Charles Proxy for Desktop 2 baar, Charles Proxy for Mobile, Charles Proxy Testing, FAQ and Troubleshooting (Web Debugging Proxy). Issues and reporting (7) - How to edit an Issue Report, Bug Rejections 2 baar, Best Practices (Testing), What is an Issue, How to write an Issue Report 2 baar.",
+     "b": "The Charles Proxy quiz needs 25 correct answers. It draws from cycle, communication and platform rules (cycle information, communication, tester selection, Terms of Use, slots, ratings, payments, practice cycles), from web debugging proxy and Charles courses for desktop and mobile including troubleshooting, and from issue topics such as editing and writing reports and bug rejections.",
+     "t": "Charles quiz 25 = Platform 10 + Proxy 8 + Issues 7."
+    },
+    {
+     "q": "You cannot collect a Charles log from your mobile device. What should you do?",
+     "s": "Charles Proxy for Desktop, Charles Proxy for Mobile aur Web Debugging FAQ courses dobara check karo. Phir bhi stuck ho to cycle chat me poochho.",
+     "b": "Re-check the Charles Proxy for Desktop, Charles Proxy for Mobile and Web Debugging FAQ courses, and if still stuck, ask in the cycle chat.",
+     "t": "Teen courses, phir chat."
+    },
+    {
+     "q": "What Host and Port values go in the Charles SSL proxying settings?",
+     "s": "Host = * (ya khali chhod do). Port = 443.",
+     "b": "In the SSL proxying settings, set Host to * or leave it empty, and set Port to 443.",
+     "t": "Star aur 443."
+    },
+    {
+     "q": "How do you get a Charles log for Firefox, and what if you have no WiFi?",
+     "s": "Firefox aur Charles log ke liye Charles Proxy for Desktop course follow karo. WiFi nahi hai to is case me kam se kam 2 mobile phones chahiye jinme internet ho (ek external guide link diya gaya hai).",
+     "b": "For Firefox, follow the Charles Proxy for Desktop course. Without WiFi you need at least two mobile phones with internet, as described in the linked external guide.",
+     "t": "Firefox = Desktop course; no WiFi = 2 phones."
+    },
+    {
+     "q": "How do you remove the Charles certificate from Android or iOS?",
+     "s": "Web Debugging FAQ course dekho.",
+     "b": "The Web Debugging FAQ course explains how to remove the Charles certificate from Android and iOS devices.",
+     "t": "Certificate hatana = Web Debugging FAQ."
+    },
+    {
+     "q": "Your Charles log is too large. How do you capture a smaller one?",
+     "s": "Steps: 1) Charles open karo. 2) Broom icon click karke traffic clear karo. 3) Bug reproduce karo. 4) Stop Recording click karo. 5) Session save karo.",
+     "b": "Open Charles, click the Broom icon to clear traffic, reproduce the bug, click Stop Recording and save the session.",
+     "t": "Jhaadu, reproduce, stop, save."
+    },
+    {
+     "q": "What is required to join the Academy Challenge, and what does it make you practise?",
+     "s": "Requirement: Charles Proxy cycle pass kiya ho. New things to practise: 1) Kisi bhi paid cycle jaisa live cycle me testing. 2) Scope ke hisaab se slot claim karna, test case execute aur complete karna. 3) Bina mistakes ke well-written issue reports submit karna. 4) Duplicates avoid karne ke liye dusre testers ke issues check karna. 5) Known issues list: overview padho aur agar list hai to testing se pehle check karo. 6) Dusron ke reported issues reproduce karna ya +1 karna.",
+     "b": "You must have passed the Charles Proxy cycle. The Challenge simulates a paid cycle: you claim a slot and execute and complete a test case by scope, submit mistake-free issue reports, check other testers' issues and any known issues list to avoid duplicates, and reproduce or +1 issues reported by others.",
+     "t": "Challenge = paid cycle ki rehearsal; slot, clean report, duplicate check, +1."
+    },
+    {
+     "q": "What are the Academy Challenge cycle rules and passing criteria?",
+     "s": "Cycle info: 1) Mistakes wale issue reports reject. 2) Invalid reports, duplicates samet, reject. 3) Minor visual aur content issues jo end user ko block nahi karte, reject. 4) Kitne bhi issue reports allowed. 5) Academy Challenge cycle me 10 baar participate kar sakte ho. Passing: kam se kam ek approved issue report aur ek approved test case.",
+     "b": "In the Academy Challenge, reports with mistakes, invalid reports including duplicates, and minor visual or content issues that do not block the end user are rejected. There is no limit on the number of reports and you can take part up to 10 times. To pass you need at least one approved issue report and one approved test case.",
+     "t": "Mistake/duplicate/minor visual = reject; unlimited reports; 10 attempts."
+    },
+    {
+     "q": "Why would you take part in the Academy Challenge more than once, and what is the Academy All Stars cycle?",
+     "s": "What to do next: FAQ aur previous courses padho, quiz complete karo (Reference Links), blue Sign Up button se sign up karo, overview padho, invitation accept karo, instructions follow karo. Up to 10 baar participate kar sakte ho skills aur tester rating improve karne ke liye. Is cycle aur preceding cycles me performance ke basis pe Academy team Academy All Stars cycle ke liye testers select karti hai, jo next week invite hote hain. 10 baar tak practise karne se chance badhta hai.",
+     "b": "You can join the Challenge up to 10 times to build skills and improve your tester rating. Based on performance in it and the earlier cycles, the Academy team selects testers for the Academy All Stars cycle and invites them the following week, so practising more raises your chances.",
+     "t": "10 baar khelo, rating badhao, All Stars ka invite pao."
+    },
+    {
+     "q": "Which course areas does the Academy Challenge quiz draw from?",
+     "s": "30 questions sahi karne hain. Area wise: Issues and reporting (9) - How to edit an Issue Report 2 baar, Bug Rejections 2 baar, Reporting, What is an Issue?, How to write an Issue Report, Best Practices (Issue Reports), FAQ (Academy Challenge). Platform and tester basics (9) - Welcome, Tester Ratings, Tester Selection, Accepting an Invitation, Communication, Community, Helpful Acronyms and Definitions, Practice Test Cycles, Slots. Evidence and tools (7) - Basics of Screenshots, Basics of Screen Recordings 2 baar, Basics of Logs, Android Device Logs, Charles Proxy for Desktop, Web Debugging Proxy. Best practices for testing and test cases (5) - Best Practices (Test Cases) 3 baar, Best Practices (Testing) 2 baar.",
+     "b": "The Academy Challenge quiz needs 30 correct answers and spans almost the whole Academy: issue reporting, editing and rejections, platform basics such as ratings, selection, invitations, communication, community, acronyms and slots, evidence tools like screenshots, recordings, logs and Charles, and best practices for testing and test cases.",
+     "t": "Challenge quiz 30 = Issues 9 + Platform 9 + Tools 7 + Best practices 5."
+    },
+    {
+     "q": "In the Academy Challenge, what do you do when you find an issue while completing a test case step?",
+     "s": "Fail click karo, phir Fail & Report, saare fields bharo aur submit karo.",
+     "b": "Click Fail on the step, then Fail & Report, fill in all the fields and submit the issue.",
+     "t": "Fail -> Fail & Report -> fields -> submit."
+    },
+    {
+     "q": "What if the issue you hit in a test case step was already reported by another tester?",
+     "s": "Step fail karo, comment field me original issue id mention karo, aur already reported issue pe +1 karo.",
+     "b": "Fail the step, mention the original issue ID in the comment field and add a +1 to the already reported issue.",
+     "t": "Fail + original id + plus one."
+    },
+    {
+     "q": "What if you find no issue while completing the test case?",
+     "s": "Test case submit karo aur website pe exploratory testing shuru karo.",
+     "b": "Submit the test case and start exploratory testing on the website.",
+     "t": "Kuch nahi mila? submit karo, explore karo."
+    },
+    {
+     "q": "Can you report issues on footer links, career pages or about pages in the Academy Challenge?",
+     "s": "Haan, jab tak page URL ka domain scope me hai. Report karte waqt confirm karo ki site scope me hai.",
+     "b": "Yes, as long as the page's URL domain is in scope; confirm the site is in scope when reporting.",
+     "t": "Domain in scope = page allowed."
+    },
+    {
+     "q": "After a TTL announcement you cannot access the Test Cases or Issues tab. What should you do?",
+     "s": "Blue acknowledge button se announcement acknowledge karo.",
+     "b": "Acknowledge the announcement with the blue acknowledge button to regain access.",
+     "t": "Announcement acknowledge karo, tab khul jayenge."
+    },
+    {
+     "q": "You hit the bug limit in the Academy Challenge. What does that mean?",
+     "s": "Rated ya unrated, sab testers ke paas ek time pe sirf 5 new issues ho sakte hain. Previous issues review hone tak wait karo.",
+     "b": "Both rated and unrated testers can have only up to 5 new issues at a time, so wait until your previous issues are reviewed.",
+     "t": "5 new at a time; review ka wait."
+    },
+    {
+     "q": "How many issues should you report in the Academy Challenge, and how many do you need to pass?",
+     "s": "Koi limit nahi. Jo bhi issue mile report karo, lekin duplicates, WAD ya out of scope nahi. Mistakes wale issues reject hote hain. High-quality, valuable issues pe focus karo. (Passing ke liye cycle info: kam se kam ek approved issue report aur ek approved test case.)",
+     "b": "There is no limit; report any valid issue you find, but not duplicates, WAD or out-of-scope items, since reports with mistakes are rejected. Aim for high-quality, valuable issues; passing still needs at least one approved issue and one approved test case.",
+     "t": "Quantity nahi, quality; duplicate/WAD/out of scope mat bhejo."
+    }
+   ],
+   "group": "academy"
   }
  ],
  "quiz": [
@@ -19605,6 +19883,486 @@
    ],
    "a": 1,
    "w": "Abroad wali baat tabhi jab company global ho aur context ho."
+  },
+  {
+   "t": "ua-cert",
+   "q": "How many quiz questions must you answer correctly before signing up for the Computer Testing cycle?",
+   "o": [
+    "15",
+    "20",
+    "25",
+    "30"
+   ],
+   "a": 0,
+   "w": "Computer Testing quiz me 15 sahi chahiye."
+  },
+  {
+   "t": "ua-cert",
+   "q": "How many quiz questions must you answer correctly before signing up for the Mobile Device Testing cycle?",
+   "o": [
+    "15",
+    "20",
+    "25",
+    "30"
+   ],
+   "a": 1,
+   "w": "Mobile ka quiz 20 sahi maangta hai."
+  },
+  {
+   "t": "ua-cert",
+   "q": "How many quiz questions must you answer correctly before signing up for the Charles Proxy Testing cycle?",
+   "o": [
+    "20",
+    "30",
+    "25",
+    "15"
+   ],
+   "a": 2,
+   "w": "Charles Proxy quiz = 25 sahi."
+  },
+  {
+   "t": "ua-cert",
+   "q": "How many quiz questions must you answer correctly before signing up for the Academy Challenge?",
+   "o": [
+    "25",
+    "20",
+    "40",
+    "30"
+   ],
+   "a": 3,
+   "w": "Academy Challenge quiz = 30 sahi."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which cycle must be passed before joining Computer Testing?",
+   "o": [
+    "Introduction to Testing",
+    "Mobile Device Testing",
+    "Charles Proxy Testing",
+    "Academy Challenge"
+   ],
+   "a": 0,
+   "w": "Computer Testing ki requirement Introduction to Testing pass hai."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which cycle must be passed before joining the Academy Challenge?",
+   "o": [
+    "Computer Testing",
+    "Charles Proxy Testing",
+    "Introduction to Testing",
+    "Academy All Stars"
+   ],
+   "a": 1,
+   "w": "Challenge ke liye Charles Proxy cycle pass chahiye."
+  },
+  {
+   "t": "ua-cert",
+   "q": "What is needed to pass Computer Testing?",
+   "o": [
+    "Three approved issue reports",
+    "One approved issue report only",
+    "At least one approved issue report and one approved test case",
+    "One approved test case and a written review"
+   ],
+   "a": 2,
+   "w": "Pass = 1 approved issue + 1 approved test case."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Within what time is a Pass grade assigned during an active or locked cycle?",
+   "o": [
+    "Only when the cycle closes",
+    "Immediately after the quiz",
+    "48 hours after the cycle locks",
+    "12 to 24 hours after both the issue and test case are approved"
+   ],
+   "a": 3,
+   "w": "Dono approvals ke 12-24 ghante me Pass milta hai."
+  },
+  {
+   "t": "ua-cert",
+   "q": "What happens to a tester who gets a Fail when the cycle closes?",
+   "o": [
+    "They sign up again for the same level",
+    "They move to the next cycle anyway",
+    "They must redo the Introduction to Testing cycle",
+    "They are removed from the program"
+   ],
+   "a": 0,
+   "w": "Fail = same level dobara sign up."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which operating systems are allowed in the Computer Testing cycle?",
+   "o": [
+    "Windows only",
+    "Windows, macOS or Linux",
+    "Windows and macOS only",
+    "Any OS including Android"
+   ],
+   "a": 1,
+   "w": "Computer cycle: Windows, macOS ya Linux."
+  },
+  {
+   "t": "ua-cert",
+   "q": "What is the maximum number of issue reports in the Computer Testing cycle?",
+   "o": [
+    "One",
+    "Five",
+    "Three",
+    "No limit"
+   ],
+   "a": 2,
+   "w": "Computer aur Mobile me max three issues."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Why don't you need to worry about duplicates in Computer Testing?",
+   "o": [
+    "Duplicates are always approved",
+    "Only one tester joins each cycle",
+    "The TTL merges duplicates",
+    "Other testers' issues are hidden"
+   ],
+   "a": 3,
+   "w": "Dusron ke issues hidden hote hain."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which is NOT listed as a new thing practised in Computer Testing?",
+   "o": [
+    "Collecting Charles logs",
+    "Writing a review",
+    "Collecting desktop browser logs",
+    "Creating screen recordings on computers"
+   ],
+   "a": 0,
+   "w": "Charles log Computer cycle ka part nahi; review, desktop log, recording hai."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which course appears three times in the Computer Testing quiz map, together with Basics of Screen Recording?",
+   "o": [
+    "Test Case",
+    "Bug Rejections",
+    "Handbrake",
+    "What is an Issue"
+   ],
+   "a": 1,
+   "w": "Bug Rejections Q3, Q13, Q14 - teen baar."
+  },
+  {
+   "t": "ua-cert",
+   "q": "After claiming a slot in Computer Testing, what do you do with the test case?",
+   "o": [
+    "Write a new test case",
+    "Send it to the TTL for approval first",
+    "Open it and execute it",
+    "Copy it into a bug report"
+   ],
+   "a": 2,
+   "w": "Testers test case likhte nahi, execute karte hain."
+  },
+  {
+   "t": "ua-cert",
+   "q": "A test case step shows 'MINIMUM 1' under Result Attachments. What does that mean?",
+   "o": [
+    "Attachments are optional",
+    "You may upload at most one attachment",
+    "Only a screenshot of step 1 is required",
+    "You must upload at least one attachment"
+   ],
+   "a": 3,
+   "w": "Minimum dikhe to upload zaroori."
+  },
+  {
+   "t": "ua-cert",
+   "q": "To add a new attachment to a submitted bug report, which statement is correct?",
+   "o": [
+    "You do not need to click Edit Issue; use the attachments section",
+    "You must click Edit Issue first",
+    "You must resubmit the bug report",
+    "Only the TTL can add attachments"
+   ],
+   "a": 0,
+   "w": "Attachments section me seedha upload, Edit Issue nahi."
+  },
+  {
+   "t": "ua-cert",
+   "q": "What should you wait for before deleting the old incorrect attachment?",
+   "o": [
+    "TTL approval",
+    "The Upload Complete message",
+    "The cycle to lock",
+    "An email confirmation"
+   ],
+   "a": 1,
+   "w": "Upload Complete aane ke baad purana delete karo."
+  },
+  {
+   "t": "ua-cert",
+   "q": "The TTL says the 'Navigated' string is missing from your console log. What did you most likely miss?",
+   "o": [
+    "Enabling dark mode in DevTools",
+    "Clearing browser cookies",
+    "Refreshing the homepage after opening the console",
+    "Using incognito mode"
+   ],
+   "a": 2,
+   "w": "Console kholne ke baad homepage refresh karna tha."
+  },
+  {
+   "t": "ua-cert",
+   "q": "If reproducing the issue opens a new tab, which console setting should you enable in Chrome or new Edge?",
+   "o": [
+    "Disable cache",
+    "Show network timeline",
+    "Group similar messages",
+    "Auto-open DevTools for popups"
+   ],
+   "a": 3,
+   "w": "Popup tab ke liye Auto-open DevTools for popups."
+  },
+  {
+   "t": "ua-cert",
+   "q": "A registration name field accepts numeric values. What kind of issue is this?",
+   "o": [
+    "Field validation issue",
+    "Usability issue",
+    "Content issue",
+    "Crash issue"
+   ],
+   "a": 0,
+   "w": "Galat input accept = field validation."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Can you test the mobile version of the site in the Computer Testing cycle?",
+   "o": [
+    "Yes, using browser device emulation",
+    "No, report issues in desktop view on full screen",
+    "Yes, if you resize the window",
+    "Only on macOS"
+   ],
+   "a": 1,
+   "w": "Computer cycle = desktop view, full screen."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Your issue is approved but you forgot the test case and the cycle is locked. When can you still submit it?",
+   "o": [
+    "Any time within 24 hours",
+    "After emailing the TTL",
+    "Only if the test case was requested for more info",
+    "Never, under any condition"
+   ],
+   "a": 2,
+   "w": "Lock ke baad sirf more info request pe."
+  },
+  {
+   "t": "ua-cert",
+   "q": "You have two approved issues and one rejected issue in Computer Testing. Can you report another?",
+   "o": [
+    "No, three reports are the hard limit",
+    "Only if the TTL allows it",
+    "Only after the cycle locks",
+    "Yes, up to three approved issues in total"
+   ],
+   "a": 3,
+   "w": "FAQ: ek aur kar sakte ho, total 3 approved."
+  },
+  {
+   "t": "ua-cert",
+   "q": "You claimed a slot with the wrong device and the cycle is locked. What should you do?",
+   "o": [
+    "Wait for the TTL's request",
+    "Click Unclaim and claim again",
+    "Edit the device in your profile",
+    "Submit a new test case"
+   ],
+   "a": 0,
+   "w": "Locked = device change nahi, TTL ka wait."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which is required for Mobile Device Testing in addition to a mobile device?",
+   "o": [
+    "A second mobile device",
+    "A computer to collect mobile device logs",
+    "A paid VPN",
+    "A tablet"
+   ],
+   "a": 1,
+   "w": "Mobile device logs ke liye computer chahiye."
+  },
+  {
+   "t": "ua-cert",
+   "q": "When are test cases checked and approved in Mobile Device Testing?",
+   "o": [
+    "As soon as you submit them",
+    "Only when the cycle closes",
+    "After the cycle is locked",
+    "Before you claim a slot"
+   ],
+   "a": 2,
+   "w": "Test case review lock ke baad."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Is VPN use allowed while testing?",
+   "o": [
+    "Yes, if the app is unavailable in your country",
+    "Yes, for iOS only",
+    "Only with TTL permission",
+    "No, it is against the Terms of Use"
+   ],
+   "a": 3,
+   "w": "VPN Terms of Use ke against."
+  },
+  {
+   "t": "ua-cert",
+   "q": "ADB keeps showing 'waiting for device'. What is the first fix?",
+   "o": [
+    "Install USB drivers and the device driver on the computer",
+    "Run adb logcat -c",
+    "Factory reset the phone",
+    "Switch to iOS"
+   ],
+   "a": 0,
+   "w": "Pehle drivers, phir dusra cable."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which command clears the Android log before reproducing an issue?",
+   "o": [
+    "adb devices",
+    "adb logcat -c",
+    "adb reboot",
+    "adb logcat -d"
+   ],
+   "a": 1,
+   "w": "logcat -c log clear karta hai."
+  },
+  {
+   "t": "ua-cert",
+   "q": "What should you set as Host and Port in Charles SSL proxying settings?",
+   "o": [
+    "Host localhost and Port 8888",
+    "Host * and Port 80",
+    "Host * (or empty) and Port 443",
+    "Host empty and Port 8080"
+   ],
+   "a": 2,
+   "w": "Host = *, Port = 443."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Your Charles log is too large. What do you click first after opening Charles?",
+   "o": [
+    "Stop Recording",
+    "Save Session",
+    "SSL Proxying Settings",
+    "The Broom icon to clear traffic"
+   ],
+   "a": 3,
+   "w": "Pehle Broom se traffic clear, phir reproduce."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Without WiFi, what do you need to collect Charles logs on mobile?",
+   "o": [
+    "At least 2 mobile phones with internet",
+    "A wired Ethernet adapter",
+    "A VPN connection",
+    "An emulator only"
+   ],
+   "a": 0,
+   "w": "No WiFi = kam se kam 2 phones with internet."
+  },
+  {
+   "t": "ua-cert",
+   "q": "How many times can a tester participate in the Academy Challenge cycle?",
+   "o": [
+    "3",
+    "10",
+    "5",
+    "Unlimited"
+   ],
+   "a": 1,
+   "w": "Challenge me 10 baar tak."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which issue type is rejected in the Academy Challenge even if it is real?",
+   "o": [
+    "Functional issues blocking checkout",
+    "Crashes in scope",
+    "Minor visual and content issues that do not block the end user",
+    "Issues on in-scope footer pages"
+   ],
+   "a": 2,
+   "w": "Non-blocking minor visual/content issues reject."
+  },
+  {
+   "t": "ua-cert",
+   "q": "In the Academy Challenge, what do you do if a test case step fails on an issue already reported by someone else?",
+   "o": [
+    "Report it again as a new issue",
+    "Mark the step Pass",
+    "Skip the step",
+    "Fail the step, mention the original issue ID in the comment and +1 it"
+   ],
+   "a": 3,
+   "w": "Fail + original id comment + plus one."
+  },
+  {
+   "t": "ua-cert",
+   "q": "You cannot open the Test Cases or Issues tab after a TTL announcement. What should you do?",
+   "o": [
+    "Click the blue acknowledge button on the announcement",
+    "Reload the cycle invitation",
+    "Contact support by email",
+    "Unclaim your slot"
+   ],
+   "a": 0,
+   "w": "Announcement acknowledge karna padta hai."
+  },
+  {
+   "t": "ua-cert",
+   "q": "How many new issues can a tester have at a time in the Academy Challenge?",
+   "o": [
+    "Up to 3",
+    "Up to 5",
+    "Up to 10",
+    "No limit"
+   ],
+   "a": 1,
+   "w": "Rated ya unrated, ek time pe 5 new."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Who selects testers for the Academy All Stars cycle and when are they invited?",
+   "o": [
+    "The TTL, invited the same day",
+    "Other testers by vote, next month",
+    "The Academy team, invited the next week",
+    "Automatic after the quiz"
+   ],
+   "a": 2,
+   "w": "Academy team chunti hai, next week invite."
+  },
+  {
+   "t": "ua-cert",
+   "q": "Which course appears three times in the Academy Challenge quiz map?",
+   "o": [
+    "Charles Proxy for Desktop",
+    "Tester Ratings",
+    "Android Device Logs",
+    "Best Practices (Test Cases)"
+   ],
+   "a": 3,
+   "w": "Best Practices (Test Cases) Q3, Q19, Q28."
   }
  ]
 }
